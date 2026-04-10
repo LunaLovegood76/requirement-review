@@ -8,7 +8,7 @@
 
 ### 简介
 
-一个为产品经理设计的 Claude Code Skill，模拟真实互联网公司的需求评审会议。通过扮演**技术负责人、交互设计师、测试工程师、业务方**四个角色，帮助你在正式评审前发现 PRD 盲区、补齐边界条件、强化需求论据。
+一个为产品经理设计的 Claude Skill，可用于 **Claude Code、OpenClaw** 等支持 Claude Skill 协议的 Agent 平台。通过模拟真实互联网公司的需求评审会议，扮演**技术负责人、交互设计师、测试工程师、业务方**四个角色，帮助你在正式评审前发现 PRD 盲区、补齐边界条件、强化需求论据。
 
 > 灵感来源：产品经理在需求评审中最常见的痛点——被开发怼、边界遗漏、验收标准模糊、评审走过场。
 
@@ -22,8 +22,9 @@
 
 ### 安装
 
-将 `SKILL.md` 放到以下任一目录：
+将 `SKILL.md` 放到对应平台的 Skill 目录：
 
+**Claude Code**
 ```bash
 # 全局安装（所有项目可用）
 ~/.claude/skills/requirement-review/SKILL.md
@@ -31,6 +32,10 @@
 # 项目级安装（仅当前项目可用）
 你的项目/.claude/skills/requirement-review/SKILL.md
 ```
+
+**OpenClaw 及其他平台**
+
+参考各平台文档，将 `SKILL.md` 放入对应的 Skill 加载目录即可。Skill 文件本身不依赖平台特定功能，理论上兼容所有支持 Claude Skill 协议的 Agent 工具。
 
 ### 使用方式
 
@@ -64,7 +69,7 @@ Phase 5  收尾           → 保存报告 / 深入讨论 / 重新评审
 
 ### 系统要求
 
-- Claude Code（任意版本）
+- 支持 Claude Skill 协议的 Agent 平台（Claude Code、OpenClaw 等）
 - 不依赖任何外部工具或 MCP
 
 ---
@@ -73,7 +78,7 @@ Phase 5  收尾           → 保存报告 / 深入讨论 / 重新评审
 
 ### Introduction
 
-A Claude Code Skill designed for product managers that simulates real-world requirement review meetings. By roleplaying as **Tech Lead, UX Designer, QA Engineer, and Business Stakeholder**, it helps you discover blind spots in your PRD, fill in edge cases, and strengthen your arguments — all before the actual review meeting.
+A Claude Skill for product managers that simulates real-world requirement review meetings. Compatible with **Claude Code, OpenClaw**, and other agent platforms that support the Claude Skill protocol. By roleplaying as **Tech Lead, UX Designer, QA Engineer, and Business Stakeholder**, it helps you discover blind spots in your PRD, fill in edge cases, and strengthen your arguments — all before the actual review meeting.
 
 > Inspired by the most common pain points in product requirement reviews: getting challenged by engineers, missing edge cases, vague acceptance criteria, and rubber-stamp reviews that catch nothing.
 
@@ -87,8 +92,7 @@ A Claude Code Skill designed for product managers that simulates real-world requ
 
 ### Installation
 
-Place `SKILL.md` in either location:
-
+**Claude Code**
 ```bash
 # Global install (available in all projects)
 ~/.claude/skills/requirement-review/SKILL.md
@@ -96,6 +100,10 @@ Place `SKILL.md` in either location:
 # Project-level install (current project only)
 your-project/.claude/skills/requirement-review/SKILL.md
 ```
+
+**OpenClaw & other platforms**
+
+Refer to your platform's documentation for the Skill directory path. The skill file has no platform-specific dependencies and should work with any agent tool that supports the Claude Skill protocol.
 
 ### Usage
 
@@ -129,7 +137,7 @@ Phase 5  Wrap-up        → Save report / Deep dive / Re-review
 
 ### Requirements
 
-- Claude Code (any version)
+- Any agent platform that supports the Claude Skill protocol (Claude Code, OpenClaw, etc.)
 - No external tools or MCP servers required
 
 ### License
